@@ -146,7 +146,7 @@ def interevent(lie_id, save=False):
         except FileExistsError:
             fig.savefig(f'interevent_figures/interevent_{lie_id}.pdf', dpi=200, bbox_inches='tight')
 
-    return slope, stderr, len(days)
+    return slope, stderr
 
     
 def unique_ids():
